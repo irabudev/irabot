@@ -6,7 +6,7 @@ const axios = require('axios');
 require('./db')
 
 // Bot config
-const token = '1045292889:AAE84l6SKRJXnUoFuwdpLHmqpsY9b7i4Mws';
+const token = process.env.TELEGRAM_BOT_TOKEN
 const bot = new TelegramBot(token, {
   polling: true
 });
